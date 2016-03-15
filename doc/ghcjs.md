@@ -25,39 +25,20 @@ compiler-check: match-exact
 
 ### GHCJS `master` (a.k.a. improved base)
 
-To use the master branch, a.k.a improved base, add the following to your `stack.yaml`:
+To use the master branch, add the following to your `stack.yaml`:
 
 ```yaml
-compiler: ghcjs-0.2.0.20151230.3_ghc-7.10.2
-compiler-check: match-exact
-setup-info:
- ghcjs:
-  source:
-   ghcjs-0.2.0.20151230.3_ghc-7.10.2:
-    url: "https://github.com/nrolland/ghcjs/releases/download/v.0.2.0.20151230.3/ghcjs-0.2.0.20151230.3.tar.gz"
-```
-
-or for the 2015-10-29 version
-```yaml
-compiler: ghcjs-0.2.0.20151029_ghc-7.10.2
+compiler: ghcjs-0.2.0.20160315_ghc-7.10.2
 compiler-check: match-exact
 setup-info:
   ghcjs:
       source:
-            ghcjs-0.2.0.20151029_ghc-7.10.2:
-                    url: "https://github.com/nrolland/ghcjs/releases/download/v0.2.0.20151029/ghcjs-0.2.0.20151029.tar.gz"
+            ghcjs-0.2.0.20160315_ghc-7.10.2:
+                    url: "http://ghcjs.luite.com/master-20160315.tar.gz"
 ```
 
-or for the 2015-10-01 version
-```yaml
-compiler: ghcjs-0.2.0.20151001_ghc-7.10.2
-compiler-check: match-exact
-setup-info:
-  ghcjs:
-    source:
-      ghcjs-0.2.0.20151001_ghc-7.10.2:
-        url: "https://github.com/fizruk/ghcjs/releases/download/v0.2.0.20151001/ghcjs-0.2.0.20151001.tar.gz"
-```
+where you can pick your poison from  [daily sdist build](http://ghcjs.luite.com/)
+
 
 ### Custom installed GHCJS (development branch)
 
